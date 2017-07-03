@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex4</title>
+</head>
+<body>
+<script>
+    var a=prompt("Введите первое число");
+    var b=prompt("Введите второе число");
+    var summa=0;
+     var neparnue="";
+    if(Number(a)>Number(b)){
+        for(var i=+b; i<=+a; i++){
+            var summa=summa+i;
+            if(i%2!=0){
+                neparnue=neparnue+i+" ";
+            }
+        }
+        document.write("Сумма " + summa+"<br>");
+        document.write("Непарные числа на данном промежутке " + neparnue);
+    }
+    else{
+        if(Number(a)<Number(b)){
+            for(var i=+a; i<=+b; i++){
+                var summa=summa+i;
+                if(i%2!=0) {
+                    neparnue = neparnue + i + " ";
+                }
+            }
+            document.write("Сумма " + summa+"<br>");
+            document.write("Непарные числа на данном промежутке " + neparnue);
+        }
+        else {
+            document.write("Сумма " + Number(a));
+            if (a % 2 != 0) {
+                neparnue = a;
+                document.write("Непарные числа на данном промежутке " + neparnue);
+            }
+        }
+    }
+    </script>
+</body>
+</html>

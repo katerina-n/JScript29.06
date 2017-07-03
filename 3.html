@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex3</title>
+</head>
+<body>
+<script>
+    var r=prompt("Введите радиус цилиндра");
+    var h=prompt("Введите высоту цилиндра");
+    if(r&&h){
+        var s= 2*3.14*Number(r)*(Number(r)+ Number(h));
+        document.write("Площадь полной поверхности цилиндра " +s +"<br>");
+        var v=3.14*(Number(r)^2)*Number(h);
+        document.write("Объем цилиндра " +v);
+    }
+
+    </script>
+<div><img src="culindr.png">
+</div>
+</body>
+</html>
